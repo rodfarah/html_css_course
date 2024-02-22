@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+      <p>My Form</p>
+      <p>
+        <label for="name">
+          Name
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            value="Rodrigo Farah"
+            required
+          />
+        </label>
+      </p>
+      <p>
+        <label for="owner">
+          Do you own an appartment in the condominium?
+          <input type="checkbox" id="owner" />
+        </label>
+      </p>
+      <p>
+        <label for="block"> In which block your appartment is located? </label>
+        <label for="a-block">
+          <input type="radio" id="a-block" value="a-block" name="block" />
+          Block A
+        </label>
+        <label for="b-block">
+          <input
+            type="radio"
+            id="b-block"
+            value="b-block"
+            name="block"
+            checked
+          />
+          Block B
+        </label>
+        <label for="c-block">
+          <input type="radio" id="c-block" value="c-block" name="block" />
+          Block C
+        </label>
+      </p>
+      <p>
+        <label for="facility"
+          >Select the facility you would like to make a reservation:</label
+        >
+        <select name="facility" id="facility">
+          <option value="swimming-pool">Swimming Pool</option>
+          <option value="gimn">Gimn</option>
+          <option value="sauna" disabled>Sauna</option>
+          <option value="barbeque">Barbeque</option>
+          <option value="party-room" selected>Party Room</option>
+        </select>
+      </p>
+      <p>
+        <label for="date">Date you need to use the space:</label>
+        <input type="date" id="date" name="date" />
+      </p>
+
+      <p>
+        <label for="test-datetime"
+          >Please, select date and time you would like to use the space:</label
+        >
+        <input
+          type="datetime-local"
+          id="test-datetime"
+          name="test-datetime"
+          required
+          value="2024-12-08T20:00"
+        />
+      </p>
+      <p>
+        <label for="class-starts-at"
+          >Which time you would like to start using the space?</label
+        >
+        <input
+          type="time"
+          id="class-starts-at"
+          value="07:30"
+          name="time"
+          min="07:00"
+        />
+      </p>
+
+      <p class="range-container">
+        <label for="time-length"
+          >How many minutes you want to use the space?</label
+        >
+        <input
+          type="range"
+          id="time-length"
+          name="time-length"
+          min="30"
+          max="180"
+          step="30"
+          list="time-options"
+        />
+        <datalist id="time-options">
+          <option value="30">30 minutes</option>
+          <option value="60">60 minutes</option>
+          <option value="90">90 minutes</option>
+          <option value="120">120 minutes</option>
+          <option value="150">150 minutes</option>
+          <option value="180">180 minutes</option>
+        </datalist>
+      </p>
+      <p>
+        <label for="notebook-color">Choose the color of your profile:</label>
+        <input type="color" id="notebook-color" name="notebook-color" />
+      </p>
+      <p>
+        <label for="email">Type your e-mail address:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="eg. fulano@gmail.com"
+        />
+      </p>
+      <p>
+        <label for="attached-file"
+          >Attach your health exam that allows you to use the swimming
+          pool:</label
+        >
+        <input
+          type="file"
+          id="attached-file"
+          name="attached-file"
+          multiple
+          accept=".png, .pdf"
+        />
+      </p>
+      <p>
+        <label for="any-number"
+          >Besides you, how many people will use the space on this
+          reservation:</label
+        >
+        <input
+          type="number"
+          id="any-number"
+          name="any-number"
+          min="1"
+          max="50"
+        />
+      </p>
+      <p>
+        <label for="share-space"
+          >I do allow other users to share this space with me</label
+        >
+        <input type="checkbox" name="share-space" id="share-space" />
+      </p>
+      <p>
+        <label for="password">Type your password</label>
+        <input type="password" id="password" name="password" />
+      </p>
+      <p>
+        <label for="url-address">Type an URL:</label>
+        <input type="url" id="url-address" name="url-address" />
+      </p>
+      <p>
+        <label for="search">Search for something:</label>
+        <input
+          type="search"
+          id="search"
+          name="search"
+          placeholder="eg. swimming pool"
+        />
+      </p>
+      <p>
+        <label for="comments"
+          >Are there additional comments you would like to share?</label
+        >
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      </p>
+      <button type="submit">Send</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
