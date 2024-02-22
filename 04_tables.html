@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+        width: 800px;
+      }
+      .responsive-table {
+        max-width: 100%;
+        overflow-x: auto;
+      }
+      table caption {
+        caption-side: bottom;
+        text-align: center;
+        font-style: italic;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+      table td,
+      table th {
+        border: 1px solid grey;
+        padding: 5px;
+        text-align: left;
+      }
+      tfoot td {
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Meu chapéu tem três pontas.</p>
+
+    <div class="responsive-table">
+      <table>
+        <caption>
+          Table Description
+        </caption>
+        <thead>
+          <tr>
+            <th>Head One Test</th>
+            <th>Head Two Test</th>
+            <th>Head Three Test</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Body One</td>
+            <td>Body Two</td>
+            <td>Body Three</td>
+          </tr>
+          <tr>
+            <td colspan="2">Body One</td>
+            <td>Body Two</td>
+          </tr>
+          <tr>
+            <td>Body One</td>
+            <td>Body Two</td>
+            <td>Body Three</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Foot One</td>
+            <td>Foot Two</td>
+            <td>Foot Three</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
