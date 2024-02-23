@@ -1,0 +1,31 @@
+/* Seletor "all"  */
+* {
+    margin: 0;
+}
+
+/* Seletor de tag */
+p {
+    color: darkblue;
+}
+
+
+/* Seletor de descendentes */
+body div section p {
+    color: red;
+}
+
+/* Seletor múltiplo */
+body div section p,
+body div section h1 {
+    color: red;
+}
+h1, p {
+    color: grey;
+}
+
+/* Seletor de Classe */
+.color-red {
+    color: red;
+}
+
+/* There are lots of examples. No point on wrtiting everything, study as there is the need of using. */
