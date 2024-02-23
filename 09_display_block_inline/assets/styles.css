@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid .col {
+    /* display: block ==> Standard. Each block takes the whole width (even though I may not see it) and the next content is going to be in the next line*/
+    /* display: inline; ==> Formatting (eg. width) is based on content, not in the whole line*/
+    width: 300px;
+    height: 300px;
+    background: red;
+    margin: 30px;
+}
