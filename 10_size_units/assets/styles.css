@@ -1,0 +1,34 @@
+html {
+    /* html is root  */
+    /* font-size: 20px */ /* => fixed size */
+    font-size: 62,5% /* Browser standard, 100% equals to 16px. In this case, 62.5% equals to 10px */
+        /* root measure */
+    ;
+}
+
+.father {
+    /* font-size: 50px; fixed declarative measure */
+    background-color: red;
+    width: 30rem; /* Root related. In this case, 300px */
+}
+
+.son {
+    font-size: 1.5em;
+    /* father related measure */
+}
+
+.root-related {
+    font-size: 1.6rem;
+    /* root related measure. In this case, equals to 16px */
+}
+
+/* 
+OBS:
+em => Father related
+% => Father related
+rem => Root related
+vw => Relative to 1% of the width of the viewport
+vh => Relative to 1% of the height of the viewport
+vmin => Relative to 1% of viewport's smaller dimension (between width or height)
+vmax => Relative to 1% of viewport's larger dimension (between width or height)
+ */
